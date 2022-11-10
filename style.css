@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;400;700;900&display=swap");
+
 :root {
   --smokeyblack: #0c0f0a;
   --wintersky: #ff206e;
@@ -5,18 +7,47 @@
   --turquoise: #41ead4;
   --White: #ffffff;
 }
+* {
+  font-family: "M PLUS Rounded 1c";
+}
 
 /*Navbar*/
+nav {
+  background-color: var(--smokeyblack);
+  color: var(--wintersky);
+}
 /*main box*/
 #main {
   background-image: linear-gradient(180deg, var(--turquoise), var(--wintersky));
 }
 h1 {
   text-align: center;
+  width: 100%;
   color: var(--White);
 }
 /*carousel*/
 /*User box*/
+#userbox {
+  border: #fbff12 solid 1pt;
+  color: #ffffff;
+  box-shadow: var(--lemonglacier) 0px 0px 10px;
+}
+#userbox h2 {
+  margin-bottom: 1em;
+}
+.affirm {
+  background-color: #e3e614;
+  color: var(--smokeyblack);
+  font-weight: bold;
+  transition: box-shadow 1s ease-in-out, border 0.2s ease-in-out;
+}
+.affirm:hover {
+  box-shadow: var(--lemonglacier) 0px 0px 10px;
+  border: var(--lemonglacier) 1pt solid;
+}
+.new {
+  background-color: var(--turquoise);
+}
 /*footer*/
 footer {
   background-color: var(--smokeyblack);

@@ -12,9 +12,11 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar-expand-lg">
+      <div class="container-fluid d-flex">
+        <a class="navbar-brand d-flex align-content-center mr-3" href="#"
+          ><p class="m-0 py-2">DeMeATi</p>
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -26,7 +28,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse" style="width: 60%" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -44,98 +46,108 @@
         </div>
       </div>
     </nav>
-    <div id="main">
+    <div id="main" class="p-1">
       <h1>Welcome</h1>
-      <div class="row">
-        <div id="previewbox" class="container col-sm-12 col-md-6">
-          <div
-            id="carouselExampleCaptions"
-            class="carousel slide"
-            data-bs-ride="false"
-          >
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="..." class="d-block w-100" alt="..." />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
-                  <p>
-                    Some representative placeholder content for the first slide.
-                  </p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="..." />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>
-                    Some representative placeholder content for the second
-                    slide.
-                  </p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="..." />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>
-                    Some representative placeholder content for the third slide.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide="prev"
+      <div class="container my-2">
+        <div class="row">
+          <div id="previewbox" class="container col-sm-12 col-md-6">
+            <div
+              id="carouselExampleCaptions"
+              class="carousel slide"
+              data-bs-ride="false"
             >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="..." class="d-block w-100" alt="..." />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>
+                      Some representative placeholder content for the first
+                      slide.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="..." class="d-block w-100" alt="..." />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>
+                      Some representative placeholder content for the second
+                      slide.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="..." class="d-block w-100" alt="..." />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>
+                      Some representative placeholder content for the third
+                      slide.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
           </div>
-        </div>
-        <div id="userbox" class="container col-sm-12 col-md-6">
-          <h2>Sign Up or Sign In!</h2>
-          <div id="buttons" class="row">
-            <button class="col-12">I have an Account</button>
-            <button class="col-12">I'm new here</button>
+          <div id="userbox" class="container col-sm-12 col-md-6 p-3 rounded">
+            <div class="row p-3 justify-content-center">
+              <h2 class="p-0 text-center">Sign Up or Sign In!</h2>
+              <div id="buttons" class="row">
+                <button class="btn affirm rounded-pill col-12 mb-2">
+                  I have an Account
+                </button>
+                <button class="btn new rounded-pill col-12">
+                  I'm new here
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
