@@ -1,10 +1,44 @@
 :root {
-  --: ;
-  --: ;
-  --: ;
-  --: ;
-  --: ;
+  --smokeyblack: #0c0f0a;
+  --wintersky: #ff206e;
+  --lemonglacier: #fbff12;
+  --turquoise: #41ead4;
+  --White: #ffffff;
+}
+
+/*Navbar*/
+/*main box*/
+#main {
+  background-image: linear-gradient(180deg, var(--turquoise), var(--wintersky));
+}
+h1 {
+  text-align: center;
+  color: var(--White);
+}
+/*carousel*/
+/*User box*/
+/*footer*/
+footer {
+  background-color: var(--smokeyblack);
+  padding: 0.5em 1em;
+}
+#iconbox {
+  width: 10%;
 }
 svg {
-  color: red;
+  color: var(--wintersky);
+  /*background: -webkit-linear-gradient(
+    45deg,
+    var(--turquoise),
+    var(--wintersky)
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;*/
+}
+svg:hover {
+  color: var(--turquoise);
+}
+svg:active {
+  color: var(--lemonglacier);
 }
