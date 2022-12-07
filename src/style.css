@@ -21,11 +21,12 @@
 #basic-navbar-nav > div {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
 }
 
 .nav-spacer {
-  margin-left: 2em;
+  margin-left: 5em;
+  gap: 3em;
 }
 
 #basic-navbar-nav > div a {
@@ -53,14 +54,21 @@
 #namebox {
 }
 /*main box*/
+
 #main {
   background-image: linear-gradient(180deg, var(--turquoise), var(--wintersky));
-  height: calc(100vh - 11.5vh);
+  /*height: calc(100vh - 11.5vh);*/
+  min-height: 100vh;
+}
+#mainComponents {
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 h1 {
   text-align: center;
   width: 100%;
-  color: var(--White);
+  color: var(--white);
 }
 /*carousel*/
 /*User box*/

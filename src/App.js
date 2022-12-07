@@ -4,16 +4,19 @@ import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NavBar from "./components/NavBar";
-import Footer from "./components/Footer";
 import Mainpage from "./components/MainPage";
+import DeMiFooter from "./components/DeMiFooter";
 
 function App() {
   return (
     <BrowserRouter>
-      <NavBar />
-      <Routes>
-        <Route path={"/"} element={<Mainpage />} />
-      </Routes>
+      <div id="main">
+        <NavBar />
+        <Routes>
+          <Route path={"/"} element={<Mainpage />} />
+        </Routes>
+      </div>
+      <DeMiFooter />
     </BrowserRouter>
   );
 }
