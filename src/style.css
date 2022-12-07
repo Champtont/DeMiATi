@@ -5,17 +5,51 @@
   --wintersky: #ff206e;
   --lemonglacier: #fbff12;
   --turquoise: #41ead4;
-  --White: #ffffff;
+  --white: #ffffff;
 }
+
 * {
   font-family: "M PLUS Rounded 1c";
 }
 
 /*Navbar*/
-nav {
+.nav {
   background-color: var(--smokeyblack);
   color: var(--wintersky);
 }
+
+#basic-navbar-nav > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-spacer {
+  margin-left: 2em;
+}
+
+#basic-navbar-nav > div a {
+  display: flex;
+  align-items: center;
+}
+.nav a {
+  text-decoration: none;
+  color: var(--wintersky);
+}
+.nav a:hover {
+  color: var(--white);
+}
+#basic-nav-dropdown {
+  color: var(--wintersky);
+}
+#basic-nav-dropdown:hover {
+  color: var(--white);
+}
+
+#hamburgermenu {
+  font-size: 25pt;
+}
+
 #namebox {
 }
 /*main box*/

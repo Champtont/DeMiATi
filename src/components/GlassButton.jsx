@@ -5,7 +5,10 @@ const GlassButton = (props) => {
   const navigate = useNavigate();
 
   return (
-    <Button onClick={() => navigate("/")}>
+    <Button
+      style={{ backgroundColor: props.color }}
+      onClick={() => navigate(props.link)}
+    >
       <div className="button-overlay">{props.text}</div>
     </Button>
   );

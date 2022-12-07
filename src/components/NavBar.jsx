@@ -3,18 +3,27 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { Link } from "react-router-dom";
+import { HiMenu } from "react-icons/hi";
 
 const NavBar = () => {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar className="nav" expand="lg">
       <Container>
-        <Navbar.Brand href="#home">DeMiATi</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Link to="/">DeMiATi</Link>
+        <Navbar.Toggle aria-controls="basic-navbar-nav">
+          <span>
+            <HiMenu id="hamburgermenu" />
+          </span>
+        </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+          <Nav className="nav-spacer">
+            <Link href="#home">Home</Link>
+            <Link href="#link">About Us</Link>
+            <NavDropdown
+              title="Dropdown"
+              id="basic-nav-dropdown"
+              className="userDropdown"
+            >
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Another action
