@@ -8,6 +8,22 @@ const initialState = {
     Username: "",
     password: "",
     phoneNumber: null,
+    userContacts: [],
+    albums: [
+      {
+        albumName: "",
+        albumImg: "",
+        myPhotos: [
+          {
+            files: {
+              photo: "",
+              description: "",
+              comments: [],
+            },
+          },
+        ],
+      },
+    ],
   },
 };
 

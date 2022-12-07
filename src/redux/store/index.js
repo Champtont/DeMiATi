@@ -1,7 +1,7 @@
 import { configureStore, combineReducers } from "@reduxjs/toolkit";
 
 import userReducer from "../reducers/userReducer";
-import { persistReducer, PersistStore } from "redux-persist";
+import { persistReducer, persistStore } from "redux-persist";
 import { encryptTransform } from "redux-persist-transform-encrypt";
 import localStorage from "redux-persist/es/storage";
 
@@ -14,3 +14,19 @@ const persistConfig = {
     }),
   ],
 };
+
+const mainReducer = combineReducers({
+  user: userReducer,
+});
+
+const persistedReducer = persistReducer(persistConfig, mainReducer);
+
+export const store = configureStore({
+  reducer: persistedReducer,
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      serializableCheck: false,
+    }),
+});
+
+export const persistor = persistStore(store);
