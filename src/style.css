@@ -3,8 +3,10 @@
 :root {
   --smokeyblack: #0c0f0a;
   --wintersky: #ff206e;
+  --darkwintersky: #c11954;
   --lemonglacier: #fbff12;
   --turquoise: #41ead4;
+  --darkturquoise: #2da998;
   --white: #ffffff;
 }
 
@@ -62,7 +64,10 @@
   position: relative;
 }
 #mainComponents {
+  width: 90%;
   height: 600px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   align-items: center;
 }
@@ -71,6 +76,54 @@ h1 {
   width: 100%;
   color: var(--white);
 }
+/*buttons*/
+
+#mainComponents > div > div:nth-child(1) > div > div {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  position: relative;
+  background-image: radial-gradient(transparent 95%, white);
+}
+
+.button-overlay {
+  position: absolute;
+  border-radius: 10px;
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  top: 3px;
+  left: 3px;
+  background-image: radial-gradient(transparent 90%, white);
+}
+
+.mb-2.generalbutton.turquoisebtn.btn.btn-primary {
+  background-color: #41ead4;
+  font-weight: bold;
+  transition: box-shadow 1s ease-in-out, border 0.2s ease-in-out;
+}
+
+.mb-2.generalbutton.turquoisebtn.btn.btn-primary:hover {
+  background-color: var(--darkturquoise);
+  box-shadow: var(--lemonglacier) 0px 0px 10px;
+  border: var(--lemonglacier) 1pt solid;
+  color: #fbff12;
+}
+
+.mb-2.generalbutton.pinkbtn.btn.btn-primary {
+  background-color: var(--wintersky);
+  font-weight: bold;
+  transition: box-shadow 1s ease-in-out, border 0.2s ease-in-out;
+}
+.mb-2.generalbutton.pinkbtn.btn.btn-primary:hover {
+  background-color: var(--darkwintersky);
+  box-shadow: white 0px 0px 10px;
+  color: var(--white);
+  border: var(--wintersky) 1pt solid;
+}
+
 /*carousel*/
 /*User box*/
 #userbox {
@@ -87,27 +140,7 @@ h1 {
 #userbox h2 {
   margin-bottom: 1em;
 }
-.affirm {
-  background-color: #e3e614;
-  color: var(--smokeyblack);
-  font-weight: bold;
-  transition: box-shadow 1s ease-in-out, border 0.2s ease-in-out;
-}
-.affirm:hover {
-  box-shadow: var(--lemonglacier) 0px 0px 10px;
-  border: var(--lemonglacier) 1pt solid;
-  color: #fbff12;
-}
-.new {
-  background-color: var(--turquoise);
-  font-weight: bold;
-}
-.new:hover {
-  box-shadow: var(--wintersky) 0px 0px 10px;
-  color: var(--wintersky);
-  text-shadow: #ffffff 0px 0px 2px;
-  border: var(--wintersky) 1pt solid;
-}
+
 /*footer*/
 footer {
   background-color: var(--smokeyblack);

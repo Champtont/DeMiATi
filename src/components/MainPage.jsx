@@ -8,15 +8,10 @@ const Mainpage = () => {
         <Col xs={12} md={6}>
           <div>
             <h1 className="mb-3">Sign In or Sign up!</h1>
-            <div>
-              <Row>
-                <GlassButton
-                  text="I have an account"
-                  color="var(--turquoise)"
-                />
-                <GlassButton text="I am new here" color="var(--wintersky)" />
-              </Row>
-            </div>
+            <Row>
+              <GlassButton text="I have an account" type="turquoisebtn" />
+              <GlassButton text="I am new here" type="pinkbtn" />
+            </Row>
           </div>
         </Col>
         <Col xs={12} md={6}>

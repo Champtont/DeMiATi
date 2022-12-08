@@ -6,11 +6,12 @@ const GlassButton = (props) => {
 
   return (
     <Button
-      className="mb-1"
-      style={{ backgroundColor: props.color }}
+      className={`mb-2 generalbutton ${props.type}`}
+      style={{ border: "none" }}
       onClick={() => navigate(props.link)}
     >
-      <div className="button-overlay">{props.text}</div>
+      <div className="button-overlay"></div>
+      <div>{props.text}</div>
     </Button>
   );
 };
