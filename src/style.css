@@ -114,6 +114,7 @@ button {
 
 .mb-2.generalbutton.pinkbtn.btn.btn-primary {
   background-color: var(--wintersky);
+  color: rgba(255, 255, 255, 0.731);
   font-weight: bold;
   transition: box-shadow 1s ease-in-out, border 0.2s ease-in-out;
 }
@@ -139,6 +140,13 @@ button {
 }
 #userbox h2 {
   margin-bottom: 1em;
+}
+
+.login-form {
+  background-color: #0c0f0a3b;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 10px;
 }
 
 /*footer*/
