@@ -59,9 +59,10 @@
   background-image: linear-gradient(180deg, var(--turquoise), var(--wintersky));
   /*height: calc(100vh - 11.5vh);*/
   min-height: 100vh;
+  position: relative;
 }
 #mainComponents {
-  height: 100vh;
+  height: 600px;
   display: flex;
   align-items: center;
 }
@@ -111,9 +112,12 @@ h1 {
 footer {
   background-color: var(--smokeyblack);
   padding: 0.5em 1em;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 #iconbox {
-  width: 10%;
+  width: 100%;
 }
 svg {
   color: var(--wintersky);

@@ -6,6 +6,7 @@ const GlassButton = (props) => {
 
   return (
     <Button
+      className="mb-1"
       style={{ backgroundColor: props.color }}
       onClick={() => navigate(props.link)}
     >
