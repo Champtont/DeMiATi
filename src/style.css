@@ -2,6 +2,7 @@
 
 :root {
   --smokeyblack: #0c0f0a;
+  --smokeyblack-transparent: #0c0f0aba;
   --wintersky: #ff206e;
   --darkwintersky: #c11954;
   --lemonglacier: #fbff12;
@@ -16,7 +17,7 @@
 
 /*Navbar*/
 .nav {
-  background-color: var(--smokeyblack);
+  background-color: var(--smokeyblack-transparent);
   color: var(--wintersky);
 }
 
@@ -143,7 +144,7 @@ button {
 }
 
 .login-form {
-  background-color: #0c0f0a3b;
+  background-color: #0c0f0a53;
   padding: 1em;
   margin-bottom: 1em;
   border-radius: 10px;

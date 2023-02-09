@@ -4,12 +4,15 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { Link } from "react-router-dom";
 import { HiMenu } from "react-icons/hi";
+import { ReactComponent as Logo } from "../components/assets/smdemiatilogo2.svg";
 
 const NavBar = () => {
   return (
     <Navbar className="nav" expand="lg">
-      <Container>
-        <Link to="/">DeMiATi</Link>
+      <Container style={{ position: "relative" }}>
+        <Link to="/">
+          <Logo style={{ position: "absolute", top: "-4px" }} />
+        </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span>
             <HiMenu id="hamburgermenu" />
